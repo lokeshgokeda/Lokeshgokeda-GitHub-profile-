@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#070a11">
+  <meta name="description" content="Lokesh Gokeda — developer portfolio, projects, skills, GitHub analytics and contact links.">
+  <meta name="author" content="Lokesh Gokeda">
+  <meta property="og:title" content="Lokesh Gokeda — Developer Portfolio">
+  <meta property="og:description" content="Developer portfolio with live GitHub projects, skills, analytics and social links.">
+  <meta property="og:type" content="website">
+  <title>Lokesh Gokeda — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient a1"></div><div class="ambient a2"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="Lokesh Gokeda home"><span>LG</span> LOKESH<span class="accent">.</span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+      <a href="#analytics">Analytics</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☾</button>
+      <a class="nav-btn" href="mailto:lokeshgokeda2@gmail.com">Contact ↗</a>
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="#home">Home</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+    <a href="#analytics">Analytics</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> AVAILABLE FOR LEARNING & BUILDING</div>
+        <h1>Building ideas.<br><em>Shipping projects.</em></h1>
+        <p class="lead">I'm <strong>Lokesh Gokeda</strong>, an aspiring software developer focused on JavaScript, web development and practical projects. This portfolio automatically syncs with my public GitHub profile.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore projects <span>→</span></a>
+          <a class="btn secondary" href="https://github.com/lokeshgokeda" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="btn secondary" href="Lokesh-Gokeda-Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+        <div class="social-row" aria-label="Social links">
+          <a href="https://www.linkedin.com/in/lokesh-gokeda-b88436360" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/LOKESHGOKEDA" target="_blank" rel="noopener">X / Twitter</a>
+          <a href="https://youtube.com/@lokeshgokeda-j9b" target="_blank" rel="noopener">YouTube</a>
+          <a href="mailto:lokeshgokeda2@gmail.com">Email</a>
+        </div>
+        <div class="live-note"><i></i><span id="syncStatus">Connecting to GitHub…</span><button id="retry" hidden>Retry</button></div>
+      </div>
+
+      <aside class="profile-card">
+        <div class="card-glow"></div>
+        <div class="profile-head">
+          <img id="avatar" alt="Lokesh Gokeda" src="https://github.com/lokeshgokeda.png?size=240">
+          <div><span class="label">DEVELOPER</span><h2 id="profileName">Lokesh Gokeda</h2><p id="profileLogin">@lokeshgokeda</p></div>
+        </div>
+        <p id="bio">Loading my GitHub profile…</p>
+        <div class="profile-meta"><span id="location">🌐 India</span><span id="joined">GitHub developer</span></div>
+        <div class="stat-row">
+          <div><b id="heroRepos">—</b><span>Repositories</span></div>
+          <div><b id="heroStars">—</b><span>Stars</span></div>
+          <div><b id="heroFollowers">—</b><span>Followers</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">TECH STACK</span><h2>Skills & technologies</h2><p>Technologies I'm learning and using to build practical projects.</p></div>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="skill-icon">HTML</div><h3>HTML</h3><p>Semantic, accessible web structure.</p></article>
+        <article class="skill-card"><div class="skill-icon">CSS</div><h3>CSS</h3><p>Responsive layouts, UI and animations.</p></article>
+        <article class="skill-card"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Interactive web applications and logic.</p></article>
+        <article class="skill-card"><div class="skill-icon">PY</div><h3>Python</h3><p>Programming, automation and problem solving.</p></article>
+        <article class="skill-card"><div class="skill-icon">JV</div><h3>Java</h3><p>Object-oriented programming fundamentals.</p></article>
+        <article class="skill-card"><div class="skill-icon">SQL</div><h3>SQL</h3><p>Working with relational data and queries.</p></article>
+        <article class="skill-card"><div class="skill-icon">GH</div><h3>Git & GitHub</h3><p>Version control and project deployment.</p></article>
+        <article class="skill-card"><div class="skill-icon">WEB</div><h3>Web Development</h3><p>Building responsive, deployable projects.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">SELECTED WORK</span><h2>Projects & repositories</h2><p>Automatically loaded from <strong>github.com/lokeshgokeda</strong>.</p></div>
+        <div class="head-actions"><input id="search" type="search" placeholder="Search projects…" aria-label="Search projects"><select id="sort"><option value="updated">Recently updated</option><option value="stars">Most stars</option><option value="forks">Most forks</option><option value="name">Name A–Z</option></select></div>
+      </div>
+      <div id="repoCount" class="result-line"></div>
+      <div id="projectGrid" class="project-grid"><div class="skeleton-grid"><span></span><span></span><span></span></div></div>
+      <div id="empty" class="empty" hidden>No repositories match your search.</div>
+    </section>
+
+    <section id="analytics" class="section">
+      <div class="section-head"><div><span class="eyebrow">LIVE SIGNAL</span><h2>Developer analytics</h2><p>Calculated from public GitHub repository data.</p></div></div>
+      <div class="metrics">
+        <article><span>PUBLIC REPOSITORIES</span><strong id="mRepos">—</strong><small>From GitHub profile</small></article>
+        <article><span>TOTAL STARS</span><strong id="mStars">—</strong><small>Across fetched repositories</small></article>
+        <article><span>TOTAL FORKS</span><strong id="mForks">—</strong><small>Across fetched repositories</small></article>
+        <article><span>FOLLOWERS</span><strong id="mFollowers">—</strong><small>GitHub community</small></article>
+      </div>
+      <div class="analytics-grid">
+        <article class="panel"><div class="panel-title"><span class="eyebrow">TECHNOLOGY</span><h3>Language distribution</h3></div><div id="languages" class="bars"></div></article>
+        <article class="panel"><div class="panel-title"><span class="eyebrow">RANKING</span><h3>Most starred projects</h3></div><div id="topProjects" class="ranking"></div></article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div><span class="eyebrow">ABOUT ME</span><h2>Code that keeps<br>getting better.</h2></div>
+      <div>
+        <p id="aboutBio">I'm focused on learning software development, building practical projects and continuously improving my problem-solving skills.</p>
+        <div class="about-grid">
+          <div><b>BUILD</b><span>Practical projects</span></div>
+          <div><b>LEARN</b><span>New technologies</span></div>
+          <div><b>SHIP</b><span>Deploy & improve</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies" class="section">
+      <div class="section-head"><div><span class="eyebrow">BEYOND CODE</span><h2>Hobbies & interests</h2><p>A few things that keep me curious and creative.</p></div></div>
+      <div class="hobbies-grid">
+        <article><span>💻</span><h3>Building projects</h3><p>Turning ideas into useful applications.</p></article>
+        <article><span>📚</span><h3>Learning technology</h3><p>Exploring programming and modern development tools.</p></article>
+        <article><span>🧩</span><h3>Problem solving</h3><p>Practicing coding challenges and logical thinking.</p></article>
+        <article><span>🎮</span><h3>Gaming</h3><p>Enjoying games and experimenting with game projects.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <span class="eyebrow">LET'S CONNECT</span>
+        <h2>Have an idea or opportunity?</h2>
+        <p>I'm always interested in learning, building and connecting with other developers.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:lokeshgokeda2@gmail.com">Email me ↗</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/lokesh-gokeda-b88436360" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://youtube.com/@lokeshgokeda-j9b" target="_blank" rel="noopener">YouTube ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><span>LG</span> Lokesh<span class="accent">.</span></div>
+    <p>Designed & built with HTML, CSS & JavaScript · Live data from GitHub</p>
+    <div class="footer-links">
+      <a href="https://github.com/lokeshgokeda" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/lokesh-gokeda-b88436360" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://x.com/LOKESHGOKEDA" target="_blank" rel="noopener">X</a>
+      <a href="https://youtube.com/@lokeshgokeda-j9b" target="_blank" rel="noopener">YouTube</a>
+      <a href="mailto:lokeshgokeda2@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
